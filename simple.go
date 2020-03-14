@@ -11,7 +11,7 @@ import (
 func main() {
 	err := os.Remove("./foo.db")
 
-	if err!=nil {
+	if err != nil {
 		fmt.Println("Creating a new Database")
 	}
 

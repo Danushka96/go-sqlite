@@ -37,7 +37,7 @@ func InsertData(t Models.Table, m map[string]string) bool {
 		}
 	}()
 	_, err = stmt.Exec()
-	if err!=nil {
+	if err != nil {
 		log.Fatal(err)
 	}
 	err = tx.Commit()

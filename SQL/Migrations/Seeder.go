@@ -6,18 +6,18 @@ import (
 	"github.com/danushka96/go-sqlite/SQL/Models"
 )
 
-func Seed(){
+func Seed() {
 	table := Models.New("table1")
 	tableField1 := Models.TableField{
-		Name:     "id",
-		DataType: Const.Varchar,
-		NotNull:  true,
+		Name:       "id",
+		DataType:   Const.Varchar,
+		NotNull:    true,
 		PrimaryKey: true,
 	}
 	tableField2 := Models.TableField{
-		Name:     "name",
-		DataType: Const.Varchar,
-		NotNull:  true,
+		Name:       "name",
+		DataType:   Const.Varchar,
+		NotNull:    true,
 		PrimaryKey: false,
 	}
 	table.SetTableFields(tableField1)
